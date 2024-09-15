@@ -17,15 +17,24 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
         mono: ["var(--font-mono)", ...fontFamily.mono],
       },
       colors: {
-        primary: "#59bfc7",
-        highlight: "#fbf6e2",
-        border: "#cee9eb",
-        input: "#cee9eb",
-        ring: "#cee9eb",
+        primary: "#3bbb96",
+        highlight: "#15131d",
+        border: "#2e2c33",
+        input: "#2e2c33",
+        ring: "#2e2c33",
+      },
+      animation: {
+        gradient: "gradient 8s linear infinite",
+      },
+      keyframes: {
+        gradient: {
+          to: {
+            backgroundPosition: "var(--bg-size) 0",
+          },
+        },
       },
     },
   },

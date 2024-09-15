@@ -1,5 +1,7 @@
 import { RocketIcon } from "lucide-react";
 import Link from "next/link";
+import AnimatedGradientText from "../magicui/animated-gradient-text";
+import { cn } from "@/lib/utils";
 
 const menus = [
   {
@@ -25,18 +27,23 @@ export const MenuList = () => {
       {menus.map((menu, index) => (
         <Link
           href={menu.href}
-          className="flex gap-x-2 items-center hover:bg-highlight px-3 py-1.5 rounded transition duration-200"
+          className="flex gap-x-2 items-center hover:bg-slate-700 px-3 py-1.5 rounded-full transition duration-200"
           key={index}
         >
           {menu.icon}
           <p>{menu.name}</p>
         </Link>
       ))}
-      <Link
-        href="/sign-up"
-        className="px-6 py-1.5 mt-2 md:mt-0 rounded-full bg-primary text-highlight font-semibold"
-      >
-        Facebook Event
+      <Link href="/sign-up" className="font-semibold">
+        <AnimatedGradientText>
+          <span
+            className={cn(
+              `inline animate-gradient bg-gradient-to-r from-[#59b5f8] via-[#3bbb96] to-[#59b5f8] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+            )}
+          >
+            Facebook Event
+          </span>
+        </AnimatedGradientText>
       </Link>
     </div>
   );
