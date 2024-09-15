@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-export const Carousel = ({ children, className }) => {
+export const Carousel = ({ children, className, handleRotate }) => {
   const settings = {
     dots: false,
     speed: 500,
@@ -15,8 +15,10 @@ export const Carousel = ({ children, className }) => {
     arrows: false,
     vertical: true,
     swipe: false,
-    onInit: () => console.log("init"),
-    onReInit: () => console.log("re-init"),
+    onInit: () => handleRotate(),
+    onReInit: () => {
+      handleRotate();
+    },
   };
 
   return (

@@ -2,17 +2,24 @@
 
 ## TODOs
 
+#### Phase 1
+
 - [x] setup
 - [x] font, colors
 - [x] nav
 - [x] hero
-- [ ] sponsors
-- [ ] events
-- [ ] videos
-- [ ] photo gallery
-- [ ] cta
-- [ ] footer
-- [ ] hero animation
+- [x] sponsors
+- [x] events
+- [x] videos
+- [x] photo gallery
+- [x] cta
+- [x] footer
+
+#### Phase 2
+
+- [x] hero animation
+- [ ] footer redesign
+- [ ] event pages
 
 Color scheme:
 background: #0e0c15

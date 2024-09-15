@@ -15,7 +15,7 @@ export const Videos = () => {
         />
 
         <HeroVideoDialog
-          className="col-span-1 block rounded-xl h-full"
+          className="col-span-2 md:col-span-1 block rounded-xl h-full"
           animationStyle="from-center"
           videoSrc="https://www.youtube.com/embed/09839DpTctU?si=yAc9YzlT6X-XhpXs"
           thumbnailSrc="https://img.youtube.com/vi/09839DpTctU/hqdefault.jpg"
@@ -23,7 +23,7 @@ export const Videos = () => {
         />
 
         <HeroVideoDialog
-          className="col-span-1 block rounded-xl h-full"
+          className="col-span-2 md:col-span-1 block rounded-xl h-full"
           animationStyle="from-center"
           videoSrc="https://www.youtube.com/embed/PA7DKlXCYdU?si=QFl_9hLvKHOs_a5e"
           thumbnailSrc="https://img.youtube.com/vi/PA7DKlXCYdU/hqdefault.jpg"

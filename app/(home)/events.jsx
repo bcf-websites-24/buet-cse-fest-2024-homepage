@@ -20,27 +20,27 @@ export const Events = () => {
   );
 };
 
-// bg-primary bg-secondary bg-color4
-// border-primary/30 border-secondary/30 border-color4/30
+// bg-primary bg-accent bg-color4
+// border-primary/30 border-accent/30 border-color4/30
 
 const Event = ({ event }) => {
   return (
     <div
       className={cn("border rounded-xl relative", `border-${event.color}/30`)}
     >
-      <div className="absolute inset-x-0 top-[60px] bottom-0 center opacity-0 hover:opacity-10 transition duration-200">
+      <div className="w-full">
         <Image
           src={event.image}
           width={400}
           height={400}
-          className="w-full h-full ml-auto object-contain mx-auto"
+          className="w-full h-full object-cover mx-auto rounded-xl"
         />
       </div>
-      <div className="w-full h-[300px] p-6 rounded-xl flex flex-col">
+      <div className="w-full p-6 rounded-xl flex flex-col">
         <h3 className={cn("text-2xl font-semibold")}>{event.name}</h3>
         <p className="mt-6 text-slate-300">{event.description}</p>
 
-        <div className="flex justify-between items-center mt-auto">
+        <div className="flex justify-between items-center mt-4">
           <Button
             variant="ghost"
             size="icon"

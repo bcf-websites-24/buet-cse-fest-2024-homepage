@@ -3,7 +3,7 @@ import { Button } from "./ui/button";
 
 export const Footer = () => {
   return (
-    <div className="border-t mt-32 w-full">
+    <div className="border-t mt-16 w-full">
       <div className="container flex justify-between items-center py-8 text-slate-400 w-full">
         <p className="">© 2024</p>
 

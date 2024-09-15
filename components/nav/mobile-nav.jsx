@@ -22,7 +22,7 @@ export const MobileNav = () => {
         <KanbanIcon className="rotate-90" />
       </SheetTrigger>
       <SheetContent
-        className="w-full bg-white border-none"
+        className="w-full bg-background border-none"
         onClick={() => setIsOpen(false)}
       >
         <SheetHeader>
