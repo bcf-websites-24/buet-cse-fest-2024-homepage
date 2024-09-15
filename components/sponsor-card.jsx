@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const SponsorCard = ({ sponsor }) => {
   return (
-    <div className="border p-4 rounded-xl text-center w-72">
+    <div className="border p-4 rounded-xl text-center w-72 flex flex-col items--center justify-between">
       <Image
         width="400"
         height="400"
