@@ -10,8 +10,10 @@ export const SponsorCard = ({ sponsor }) => {
         src={sponsor.logo}
         alt={sponsor.name}
       />
-      <h3 className="text-xl font-semibold mt-4 mb-2">{sponsor.name}</h3>
-      <p className="test-xs text-slate-400">{sponsor.status}</p>
+      <div className="">
+        <h3 className="text-xl font-semibold mt-4 mb-2">{sponsor.name}</h3>
+        <p className="test-xs text-slate-400">{sponsor.status}</p>
+      </div>
     </div>
   );
 };
