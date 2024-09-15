@@ -16,7 +16,7 @@ export const Hero = () => {
               BUET
               <span className="relative z-10 inline-block mx-2 md:mx-5 mb-4">
                 CSE
-                <div className="absolute -bottom-0 -left-1 -right-2.5 h-4 md:h-4 bg-primary -z-10"></div>
+                {/* <div className="absolute -bottom-0 -left-1 -right-2.5 h-4 md:h-4 bg-primary -z-10"></div> */}
               </span>
               FEST
               <span className="text-5xl md:text-7xl ml-2 md:ml-5">2024</span>

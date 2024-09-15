@@ -16,6 +16,10 @@
     @apply flex items-center justify-center;
   }
 
+  .header {
+    @apply text-4xl font-semibold text-center mb-16;
+  }
+
   .btn {
     @apply py-3 px-6;
   }

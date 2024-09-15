@@ -5,13 +5,14 @@
 - [x] setup
 - [x] font, colors
 - [x] nav
-- [ ] hero
+- [x] hero
 - [ ] sponsors
 - [ ] events
 - [ ] videos
 - [ ] photo gallery
 - [ ] cta
 - [ ] footer
+- [ ] hero animation
 
 Color scheme:
 background: #0e0c15

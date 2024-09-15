@@ -9,10 +9,7 @@ export const EventCard = ({ event }) => {
         <h3 className="text-2xl font-mono text-slate-100 font-semibold">
           {event.name}
         </h3>
-        <p className="mt-4 text-slate-500">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
-          perspiciatis.
-        </p>
+        <p className="mt-4 text-slate-500">{event.description}</p>
 
         <Button
           size="icon"

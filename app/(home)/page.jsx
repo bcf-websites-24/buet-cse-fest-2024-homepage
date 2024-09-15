@@ -1,22 +1,19 @@
+import { CallToAction } from "./cta";
+import { Events } from "./events";
+import { Gallery } from "./gallery";
 import { Hero } from "./hero";
+import { Sponsors } from "./sponsors";
+import { Videos } from "./videos";
 
 export default function Home() {
   return (
     <div className="w-full">
       <Hero />
-
-      <div className="h-screen">
-        <p className="font-semibold text-3xl font-mono">
-          Whereas disregard and contempt for human rights have resulted
-        </p>
-        <p className="font-bold text-">hello</p>
-        <p className="font-regular text-">hello</p>
-        <p className="font-semibold text-">hello</p>
-        <p className="font-light text-">hello</p>
-      </div>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
+      <Sponsors />
+      <Events />
+      <Videos />
+      {/* <Gallery /> */}
+      <CallToAction />
     </div>
   );
 }
