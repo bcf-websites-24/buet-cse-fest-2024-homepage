@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const EventCard = ({ event }) => {
   return (
-    <div className="rounded-[24px] pb-4 bg-highlight/70 max-w-sm h-full mx-0 md:mx-auto text-center">
+    <div className="rounded-[24px] pb-4 bg-highlight/70 max-w-sm h-full mx-auto text-center">
       <div className="p-6">
         <Image
           src="/images/1.webp"

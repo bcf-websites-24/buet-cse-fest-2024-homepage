@@ -9,11 +9,17 @@ import { EventList } from "./event-list";
 export default function Home() {
   return (
     <div className="w-full relative">
-      <BackgroundGradientAnimation>
-        <div className="bg-background/70 z-10 absolute inset-0">
-          <Hero />
-        </div>
-      </BackgroundGradientAnimation>
+      <div className="block sm:hidden">
+        <Hero />
+      </div>
+
+      <div className="hidden sm:block">
+        <BackgroundGradientAnimation>
+          <div className="bg-background/70 z-10 absolute inset-0">
+            <Hero />
+          </div>
+        </BackgroundGradientAnimation>
+      </div>
       <Sponsors />
       <EventList />
       <Events />

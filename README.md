@@ -21,6 +21,7 @@
 - [x] event list
 - [x] events redesign
 - [x] footer redesign
+- [ ] align hero text
 - [ ] event pages
 
 Color scheme:
