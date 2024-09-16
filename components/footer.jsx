@@ -1,5 +1,6 @@
 import { FacebookIcon } from "lucide-react";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -8,11 +9,34 @@ export const Footer = () => {
         <p className="">© 2024</p>
 
         <div className="flex gap-4 items-center">
-          <Button size="icon" variant="outline">
-            <FacebookIcon size={14} />
-          </Button>
+          {links.map((link) => (
+            <a href={link.href} target="blank" className="p-2">
+              <Image
+                src={link.icon}
+                alt="icon"
+                width={20}
+                height={20}
+                className="invert opacity-60"
+              />
+            </a>
+          ))}
         </div>
       </div>
     </div>
   );
 };
+
+const links = [
+  {
+    icon: "/images/envelope.svg",
+    href: "mailto:",
+  },
+  {
+    icon: "/images/facebook.svg",
+    href: "https://facebook.com",
+  },
+  {
+    icon: "/images/youtube.svg",
+    href: "https://youtube.com",
+  },
+];

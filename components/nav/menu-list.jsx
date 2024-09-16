@@ -1,23 +1,23 @@
-import { RocketIcon } from "lucide-react";
+import { CodeIcon, Gamepad2Icon, PyramidIcon, RocketIcon } from "lucide-react";
 import Link from "next/link";
 import AnimatedGradientText from "../magicui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 
 const menus = [
   {
-    name: "event 1",
-    href: "/event1",
+    name: "Hackathon",
+    href: "/hackathon",
     icon: <RocketIcon size={16} />,
   },
   {
-    name: "event 2",
-    href: "/event2",
-    icon: <RocketIcon size={16} />,
+    name: "GameJam",
+    href: "/gamejam",
+    icon: <Gamepad2Icon size={16} />,
   },
   {
-    name: "event 3",
-    href: "/event3",
-    icon: <RocketIcon size={16} />,
+    name: "IUPC",
+    href: "/iupc",
+    icon: <CodeIcon size={16} />,
   },
 ];
 

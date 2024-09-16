@@ -18,7 +18,9 @@
 #### Phase 2
 
 - [x] hero animation
-- [ ] footer redesign
+- [x] event list
+- [x] events redesign
+- [x] footer redesign
 - [ ] event pages
 
 Color scheme:
