@@ -18,7 +18,7 @@ import { EventResources } from "@/components/event-resources";
 import { EventCTA } from "@/components/event-cta";
 
 export default function DLSprintPage() {
-  const event = events[1];
+  const event = events[4];
 
   return (
     <>

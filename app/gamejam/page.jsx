@@ -10,7 +10,6 @@ import {
   timeLineData,
 } from "@/lib/data";
 import { Sponsors } from "../(home)/sponsors";
-import { CallToAction } from "../(home)/cta";
 import { EventDescription } from "@/components/event-description";
 import { EventTimeLine } from "@/components/event-timeline";
 import { EventPrize } from "@/components/event-prize";
@@ -19,7 +18,7 @@ import { EventResources } from "@/components/event-resources";
 import { EventCTA } from "@/components/event-cta";
 
 export default function DLSprintPage() {
-  const event = events[1];
+  const event = events[3];
 
   return (
     <>

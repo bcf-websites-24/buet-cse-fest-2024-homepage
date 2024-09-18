@@ -10,7 +10,6 @@ import {
   timeLineData,
 } from "@/lib/data";
 import { Sponsors } from "../(home)/sponsors";
-import { CallToAction } from "../(home)/cta";
 import { EventDescription } from "@/components/event-description";
 import { EventTimeLine } from "@/components/event-timeline";
 import { EventPrize } from "@/components/event-prize";
