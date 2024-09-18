@@ -1,20 +1,45 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import { useRouter } from "next/navigation";
 
-export const CustomButton = ({ children, className, ...props }) => {
-  return (
-    <div
-      className={cn("cursor-pointer rounded px-6 py-3", className)}
-      style={{
-        border: "2px solid transparent",
-        borderImage: `linear-gradient(to bottom right, #8e44ec 0%, #59b5f8 50%, #3bbb96 100%)`,
-        borderImageSlice: 10,
-        borderRadius: "9999px",
-      }}
-      {...props}
-    >
-      {children}
-    </div>
-  );
+export const CustomButton = ({
+  children,
+  className,
+  variant = "primary",
+  link,
+  ...props
+}) => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (link) router.push(link);
+  };
+
+  if (variant === "primary") {
+    return (
+      <>
+        <div
+          className={cn(
+            "cursor-pointer rounded-[8px] px-6 py-3 bg-gradient-to-br from-primary to-accent font-semibold",
+            className
+          )}
+          onClick={handleClick}
+        >
+          {children}
+        </div>
+      </>
+    );
+  } else if (variant === "secondary") {
+    return (
+      <>
+        <div
+          className="cursor-pointer rounded-[8px] px-6 py-3 border font-semibold hover:bg-highlight/30 bg-transparent duration-300 transition"
+          onClick={handleClick}
+        >
+          {children}
+        </div>
+      </>
+    );
+  }
 };

@@ -18,7 +18,7 @@ export const Videos = () => {
           className="col-span-2 md:col-span-1 block rounded-xl h-full"
           animationStyle="from-center"
           videoSrc="https://www.youtube.com/embed/VQa5Koy_V1w?si=XXF-8cMqLcdlrzO_"
-          thumbnailSrc="https://img.youtube.com/vi/VQa5Koy_V1w/hqdefault.jpg"
+          thumbnailSrc=""
           thumbnailAlt="CSE Fest Video"
         />
 

@@ -5,6 +5,7 @@ import { Hero } from "./hero";
 import { Sponsors } from "./sponsors";
 import { Videos } from "./videos";
 import { EventList } from "./event-list";
+import { sponsors } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
           </div>
         </BackgroundGradientAnimation>
       </div>
-      <Sponsors />
+      <Sponsors sponsors={sponsors} />
       <EventList />
       <Events />
       <Videos />

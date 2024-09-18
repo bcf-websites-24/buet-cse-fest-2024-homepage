@@ -19,7 +19,7 @@ const menus = [
   },
   {
     name: "Poster Presentation",
-    href: "/poster",
+    href: "/poster-presentation",
     icon: <LightbulbIcon size={16} />,
   },
   {

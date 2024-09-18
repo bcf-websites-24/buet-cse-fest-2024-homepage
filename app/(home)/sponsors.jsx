@@ -1,8 +1,7 @@
 import Marquee from "@/components/magicui/marquee";
 import { SponsorCard } from "@/components/sponsor-card";
-import { sponsors } from "@/lib/data";
 
-export const Sponsors = () => {
+export const Sponsors = ({ sponsors }) => {
   return (
     <div className="container">
       <h3 className="header mt-24">Our Sponsors & Partners</h3>
