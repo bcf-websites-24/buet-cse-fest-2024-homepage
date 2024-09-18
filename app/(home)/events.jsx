@@ -63,7 +63,7 @@ const Event = ({ event }) => {
             {event.icon}
           </Button>
           <Link
-            href="/"
+            href={event.link}
             className={cn(
               "text-sm font-semibold flex items-center gap-x-1 transition duration-200",
               `hover:text-${event.color}`

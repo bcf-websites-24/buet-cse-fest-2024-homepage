@@ -3,22 +3,25 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRightIcon, CalendarIcon } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const EventCard = ({ event }) => {
   return (
     <div className="rounded-[24px] pb-4 max-w-sm h-full mx-auto text-center">
       <div className="p-6">
         <Image
-          src="/images/1.webp"
+          src={event.image}
           height={400}
           width={400}
           className="h-[200px] md:h-full object-contain mx-auto rounded-t-[24px]"
         />
       </div>
       <div className="mt-6 p-8">
-        <h3 className="text-2xl font-mono text-slate-100 font-semibold">
-          {event.name}
-        </h3>
+        <Link href={event.link}>
+          <h3 className="text-2xl font-mono text-slate-100 font-semibold">
+            {event.name}
+          </h3>
+        </Link>
         <p className="mt-4 text-slate-500">{event.description}</p>
 
         <p className="text-sm font-semibold mt-2 flex items-center justify-center">
