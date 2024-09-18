@@ -1,9 +1,27 @@
-import { CodeIcon, Gamepad2Icon, PyramidIcon, RocketIcon } from "lucide-react";
+import {
+  BinaryIcon,
+  BrainIcon,
+  CodeIcon,
+  Gamepad2Icon,
+  LightbulbIcon,
+  PyramidIcon,
+  RocketIcon,
+} from "lucide-react";
 import Link from "next/link";
 import AnimatedGradientText from "../magicui/animated-gradient-text";
 import { cn } from "@/lib/utils";
 
 const menus = [
+  {
+    name: "DL Sprint",
+    href: "/dlsprint",
+    icon: <BrainIcon size={16} />,
+  },
+  {
+    name: "Poster Presentation",
+    href: "/poster",
+    icon: <LightbulbIcon size={16} />,
+  },
   {
     name: "Hackathon",
     href: "/hackathon",
@@ -13,6 +31,11 @@ const menus = [
     name: "GameJam",
     href: "/gamejam",
     icon: <Gamepad2Icon size={16} />,
+  },
+  {
+    name: "CTF",
+    href: "/ctf",
+    icon: <BinaryIcon size={16} />,
   },
   {
     name: "IUPC",

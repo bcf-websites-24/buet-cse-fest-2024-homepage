@@ -45,7 +45,7 @@ export const Hero = () => {
     <div className="min-h-screen center pb-16 pt-32 md:pt-0 w-full">
       <div className="container w-full h-full">
         <div className="flex flex-col md:flex-row items-center justify-between w-full h-full gap-y-16 md:gap-y-0">
-          <div className="h-full center flex-col items-center md:items-start flex-1 w-full md:w-3/5">
+          <div className="h-full center flex-col items-center md:items-start flex-1 w-full md:w-1/2">
             {/* left */}
             <h1 className="text-3xl md:text-7xl font-semibold text-center md:text-left tracking-wider">
               BUET CSE FEST 2024
@@ -58,7 +58,7 @@ export const Hero = () => {
             <CustomButton className={""}>Our Facebook Event</CustomButton>
           </div>
 
-          <div className="h-full flex relative pb-8 md:pb-0 w-full md:w-2/5 center">
+          <div className="h-full flex relative pb-8 md:pb-0 w-full md:w-1/2 center ml-auto">
             {/* right */}
             <Carousel className={""} handleRotate={handleRotate}>
               {events.map((event, index) => (
@@ -66,7 +66,7 @@ export const Hero = () => {
               ))}
             </Carousel>
 
-            <div className="w-full h-full absolute inset-0 hidden sm:block">
+            <div className="w-full h-full absolute inset-0 hidden sm:block z-10">
               <Canvas className="w-full h-full">
                 <Suspense fallback={"loading..."}>
                   <PerspectiveCamera makeDefault position={[0, 0, 30]} />
@@ -76,7 +76,7 @@ export const Hero = () => {
                   </group>
 
                   <ambientLight intensity={1} />
-                  <directionalLight position={[10, 10, 10]} intensity={0.5} />
+                  <directionalLight position={[9.2, 10, 10]} intensity={0.5} />
                 </Suspense>
               </Canvas>
             </div>
