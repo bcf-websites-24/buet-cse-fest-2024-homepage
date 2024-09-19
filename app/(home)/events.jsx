@@ -9,6 +9,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import GridPattern from "@/components/magicui/grid-pattern";
 
 export const Events = () => {
   return (
@@ -37,13 +38,19 @@ const Event = ({ event }) => {
         `hover:border-${event.color}/30`
       )}
     >
-      <div className="w-full p-6 z-10">
+      <div className="w-full p-6 z-10 relative">
         <Lens hovering={hovering} setHovering={setHovering}>
+          <GridPattern
+            className={cn(
+              "[mask-image:radial-gradient(160px_circle_at_center,white,transparent)]",
+              "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+            )}
+          />
           <Image
             src={event.image}
             width={400}
             height={400}
-            className="w-full h-full object-cover mx-auto rounded-xl"
+            className="w-full z-20 h-full object-cover mx-auto rounded-xl"
           />
         </Lens>
       </div>

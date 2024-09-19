@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <div className="border-t mt-16 w-full">
-      <div className="container flex justify-between items-center py-8 text-slate-400 w-full">
+      <div className="container flex justify-center gap-x-6 items-center py-8 text-slate-400 w-full">
         <p className="">© 2024</p>
 
         <div className="flex gap-4 items-center">
@@ -16,7 +16,7 @@ export const Footer = () => {
                 alt="icon"
                 width={20}
                 height={20}
-                className="invert opacity-60"
+                className=""
               />
             </a>
           ))}

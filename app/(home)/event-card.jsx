@@ -1,6 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+import GridPattern from "@/components/magicui/grid-pattern";
+import { cn } from "@/lib/utils";
 import { ArrowRightIcon, CalendarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,12 +9,18 @@ import Link from "next/link";
 export const EventCard = ({ event }) => {
   return (
     <div className="rounded-[24px] pb-4 max-w-sm h-full mx-auto text-center">
-      <div className="p-6">
+      <div className="p-6 relative h-[248px]">
+        <GridPattern
+          className={cn(
+            "[mask-image:radial-gradient(160px_circle_at_center,white,transparent)]",
+            "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
+          )}
+        />
         <Image
           src={event.image}
           height={400}
           width={400}
-          className="h-[200px] md:h-full object-contain mx-auto rounded-t-[24px]"
+          className="h-[200px] z-10 md:h-full object-contain mx-auto rounded-t-[24px]"
         />
       </div>
       <div className="mt-6 p-8">

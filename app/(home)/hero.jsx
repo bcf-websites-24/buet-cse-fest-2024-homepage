@@ -12,7 +12,7 @@ import gsap from "gsap";
 import { Sphere } from "@/components/sphere";
 
 const sizes = {
-  cubePosition: [10, -5.5, 0],
+  cubePosition: [9, -3.5, 0],
 };
 
 export const Hero = () => {
@@ -76,7 +76,7 @@ export const Hero = () => {
                   </group>
 
                   <ambientLight intensity={1} />
-                  <directionalLight position={[9.2, 10, 10]} intensity={0.5} />
+                  <directionalLight position={[10, 10, 10]} intensity={0.5} />
                 </Suspense>
               </Canvas>
             </div>

@@ -35,3 +35,13 @@ secondary: #f97289
 accent: #8e44ec
 color 4: #59b5f8
 color 5: #ed6b22
+
+Sponsors
+
+- therap
+- codecrafters
+- intelligent machines
+- united group / orange solutions ltd
+
+prize money
+footer center

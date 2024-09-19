@@ -7,7 +7,7 @@ export const Sphere = ({ sphereRef }) => {
   return (
     <Float floatIntensity={2}>
       <group
-        position={[-9, 9, 0]}
+        position={[-9, 11, 0]}
         rotation={[0, 0, 0]}
         scale={1}
         dispose={null}

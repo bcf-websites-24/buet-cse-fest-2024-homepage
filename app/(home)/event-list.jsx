@@ -10,13 +10,17 @@ export const EventList = () => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6">
           {allEvents.map((event) => (
             <div className="flex items-center justify-start gap-x-4">
-              <Image
+              {/* <Image
                 src={event.image}
                 width={400}
                 height={400}
                 className="rounded-xl w-20"
-              />
-              <h3 className="text-xl text-slate-200 text-light flex-1 mt-6">
+              /> */}
+              <div className="bg-gradient-to-br from-primary/70 to-accent/70 p-3 rounded-lg">
+                {event.icon}
+              </div>
+
+              <h3 className="text-xl text-slate-200 text-light flex-1">
                 {event.name}
               </h3>
             </div>

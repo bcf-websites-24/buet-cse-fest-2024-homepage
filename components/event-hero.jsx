@@ -11,7 +11,7 @@ import { Cube } from "./cube";
 import gsap from "gsap";
 
 const sizes = {
-  cubePosition: [10, -5.5, 0],
+  cubePosition: [10, -3.5, 0],
 };
 
 export const EventHero = ({
