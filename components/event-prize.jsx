@@ -17,6 +17,8 @@ export const EventPrize = ({ prizeData }) => {
       <div className="mt-24 mb-12">
         <h3 className="header mb-12">Prize Money</h3>
 
+        {prizeData.length === 0 && <div className="center">TBD</div>}
+
         <div className="w-full center flex-col">
           <div className="">
             {prizeData.map((prize, index) => (

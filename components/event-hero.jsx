@@ -77,6 +77,7 @@ export const EventHero = ({
 
               <div className="flex items-center gap-x-6">
                 <CustomButton
+                  blank
                   variant="primary"
                   className={""}
                   link={ctaPrimary.href}
@@ -86,6 +87,7 @@ export const EventHero = ({
 
                 {ctaSpecial && (
                   <CustomButton
+                    blank
                     variant="primary"
                     className={"from-secondary to-color5"}
                     link={ctaSpecial.href}
@@ -95,6 +97,7 @@ export const EventHero = ({
                 )}
 
                 <CustomButton
+                  blank
                   variant="secondary"
                   className={""}
                   link={ctaSecondary.href}

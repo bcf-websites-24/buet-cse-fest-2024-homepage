@@ -8,12 +8,15 @@ export const CustomButton = ({
   className,
   variant = "primary",
   link,
+  blank = false,
   ...props
 }) => {
   const router = useRouter();
 
   const handleClick = () => {
-    if (link) router.push(link);
+    if (!link) return;
+    if (blank) window.open(link, "_blank");
+    else router.push(link);
   };
 
   if (variant === "primary") {
@@ -21,7 +24,7 @@ export const CustomButton = ({
       <>
         <div
           className={cn(
-            "cursor-pointer rounded-[8px] px-6 py-3 bg-gradient-to-br from-primary to-accent font-semibold",
+            "cursor-pointer rounded-[8px] px-6 py-3 bg-gradient-to-br from-primary to-accent font-semibold z-50",
             className
           )}
           onClick={handleClick}
@@ -34,7 +37,7 @@ export const CustomButton = ({
     return (
       <>
         <div
-          className="cursor-pointer rounded-[8px] px-6 py-3 border font-semibold hover:bg-highlight/30 bg-transparent duration-300 transition"
+          className="cursor-pointer rounded-[8px] px-6 py-3 border font-semibold hover:bg-highlight/30 bg-transparent duration-300 transition z-50"
           onClick={handleClick}
         >
           {children}

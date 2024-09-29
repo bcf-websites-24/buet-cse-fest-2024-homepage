@@ -2,27 +2,13 @@
 
 ## TODOs
 
-#### Phase 1
-
-- [x] setup
-- [x] font, colors
-- [x] nav
-- [x] hero
-- [x] sponsors
-- [x] events
-- [x] videos
-- [x] photo gallery
-- [x] cta
-- [x] footer
-
-#### Phase 2
-
-- [x] hero animation
-- [x] event list
-- [x] events redesign
-- [x] footer redesign
-- [ ] align hero text
-- [ ] event pages
+- [ ] main pages links
+- [x] poster presentation
+- [ ] dl sprint
+- [ ] hackathon
+- [ ] gamejam
+- [ ] ctf
+- [ ] iupc
 
 Color scheme:
 background: #0e0c15

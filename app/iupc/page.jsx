@@ -19,6 +19,69 @@ import { EventCTA } from "@/components/event-cta";
 
 export default function DLSprintPage() {
   const event = events[5];
+  const timeLineData = [
+    {
+      event: "Pre-registration",
+      location: "Online",
+      date: "Sep 29 - Oct 06",
+    },
+    {
+      event: "Mock Contest",
+      location: "Online",
+      date: "Oct 31 (03:00 PM - 05:00PM)",
+    },
+    {
+      event: "Main Contest",
+      location: "ECE Building, BUET",
+      date: "Nov 01 (08:00 AM - 01:00PM)",
+    },
+  ];
+
+  const prizeMoney = [];
+
+  const faqData = [
+    {
+      ques: "Will there be a preliminary contest for team selection?",
+      ans: "No, there will be no preliminary contest.",
+    },
+    {
+      ques: "What happens after I pre-register?",
+      ans: "After pre-registration, the number of team slots available for each university will be announced. If your team is selected, you can proceed with final registration.",
+    },
+    {
+      ques: "How will slots be assigned to each university?",
+      ans: "Slots will be assigned based on each university’s performance in recent ICPC and IUPCs.",
+    },
+    {
+      ques: "Are there any rules for how universities should fill their slots?",
+      ans: "No, universities can choose their teams from their current students however they prefer.",
+    },
+    {
+      ques: "When will final registration start?",
+      ans: "Final registration will begin once the team list is published. Updates will be provided on the event page or website.",
+    },
+    {
+      ques: "Is a registration fee required?",
+      ans: "Yes, if your team is selected, you will need to pay a fee of BDT 5,000.",
+    },
+    {
+      ques: "What should I bring on the contest day?",
+      ans: "You may bring a printed template of up to 25 pages. More details about the template guidelines will be provided closer to the event.",
+    },
+    {
+      ques: "Who should I contact for further queries?",
+      ans: "For any queries, email iupc@buetcsefest2024.com.",
+    },
+  ];
+
+  const resourcesData = [
+    {
+      videoSrc: "https://www.youtube.com/embed/iuI0SKPT35Y?si=5GT4BcRRJPrHGGdK",
+      thumbnail: "https://img.youtube.com/vi/iuI0SKPT35Y/hqdefault.jpg",
+    },
+  ];
+
+  const sponsors = [];
 
   return (
     <>
@@ -47,17 +110,17 @@ export default function DLSprintPage() {
 
         <EventDescription
           description={
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse cum corporis deserunt provident modi magni temporibus maxime minima deleniti sapiente! Et, facere! Suscipit quo perferendis hic ut repellat facilis ipsa ullam eius! Culpa temporibus voluptas ipsum ratione! Quisquam natus accusamus temporibus iure. Repellendus architecto, quo libero quis, assumenda molestias explicabo porro dolore excepturi magnam repellat, itaque sint perspiciatis! Obcaecati velit mollitia ipsa ea ducimus nemo eaque enim iusto facilis soluta officiis, vitae corporis laborum aut quisquam illum vel eveniet, eius dolore! Repellat ullam natus laborum quibusdam, ex corrupti corporis possimus ad? Eveniet rem pariatur asperiores quos autem vitae hic repellendus."
+            "The BUET CSE Fest 2024 proudly brings back the Inter University Programming Contest (IUPC) after a year-long break! This exciting competition will bring together universities from across the country, providing an opportunity for teams to showcase their problem-solving skills. With pre-registration starting on 29th September and the main contest taking place on 1st November 2024, participants will engage in a test of knowledge, collaboration, and coding expertise. Prepare to shine and compete for glory in this prestigious event!"
           }
         />
 
-        <EventTimeLine timeLineData={timeLineData["iupc"]} />
+        <EventTimeLine timeLineData={timeLineData} />
 
-        <EventPrize prizeData={prizeMoney["iupc"]} />
+        <EventPrize prizeData={prizeMoney} />
 
-        <EventFaq faqData={faqData["iupc"]} />
+        <EventFaq faqData={faqData} />
 
-        <EventResources resources={resourcesData["iupc"]} />
+        <EventResources resources={resourcesData} />
 
         <EventCTA />
       </div>
