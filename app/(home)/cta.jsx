@@ -10,7 +10,12 @@ export const CallToAction = () => {
         <p className="text-2xl md:text-4xl mb-6 text-center">
           Be a part of this amazing event.
         </p>
-        <CustomButton>Visit Facebook Event</CustomButton>
+        <CustomButton
+          link="https://www.facebook.com/profile.php?id=61566249745875"
+          blank
+        >
+          Visit Facebook Page
+        </CustomButton>
       </div>
       <BackgroundBeams />
     </div>

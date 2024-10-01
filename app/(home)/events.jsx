@@ -34,23 +34,27 @@ const Event = ({ event }) => {
   return (
     <div
       className={cn(
-        "border rounded-xl relative border-border transition duration-200 group bg-highlight",
-        `hover:border-${event.color}/30`
+        "border relative border-border transition duration-200 group bg-highlight",
+        `hover:border-${event.color}/30 rounded-xl`
       )}
     >
-      <div className="w-full p-6 z-10 relative">
-        <Lens hovering={hovering} setHovering={setHovering}>
-          <GridPattern
+      <div className="w-full z-10 relative rounded-t-xl">
+        <Lens
+          hovering={hovering}
+          setHovering={setHovering}
+          className="rounded-t-xl"
+        >
+          {/* <GridPattern
             className={cn(
               "[mask-image:radial-gradient(160px_circle_at_center,white,transparent)]",
               "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
             )}
-          />
+          /> */}
           <Image
             src={event.image}
             width={400}
             height={400}
-            className="w-full z-20 h-full object-cover mx-auto rounded-xl"
+            className="w-full z-20 h-full object-cover mx-auto "
           />
         </Lens>
       </div>

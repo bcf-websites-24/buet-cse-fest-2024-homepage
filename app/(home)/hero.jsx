@@ -12,7 +12,7 @@ import gsap from "gsap";
 import { Sphere } from "@/components/sphere";
 
 const sizes = {
-  cubePosition: [9, -3.5, 0],
+  cubePosition: [9, 0, 0],
 };
 
 export const Hero = () => {
@@ -55,7 +55,13 @@ export const Hero = () => {
               A Festival of Innovation and Creativity
             </p>
 
-            <CustomButton className={""}>Our Facebook Event</CustomButton>
+            <CustomButton
+              link="https://www.facebook.com/profile.php?id=61566249745875"
+              blank
+              className={""}
+            >
+              Our Facebook Page
+            </CustomButton>
           </div>
 
           <div className="h-full flex relative pb-8 md:pb-0 w-full md:w-1/2 center ml-auto">

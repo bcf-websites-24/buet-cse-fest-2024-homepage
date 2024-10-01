@@ -8,8 +8,8 @@ import Link from "next/link";
 
 export const EventCard = ({ event }) => {
   return (
-    <div className="rounded-[24px] pb-4 max-w-sm h-full mx-auto text-center">
-      <div className="p-6 relative h-[248px]">
+    <div className="rounded-lg pb-4 max-w-sm h-full mx-auto text-center">
+      <div className="p-6 relative h-auto">
         <GridPattern
           className={cn(
             "[mask-image:radial-gradient(160px_circle_at_center,white,transparent)]",
@@ -18,12 +18,12 @@ export const EventCard = ({ event }) => {
         />
         <Image
           src={event.image}
-          height={400}
+          height={200}
           width={400}
-          className="h-[200px] z-10 md:h-full object-contain mx-auto rounded-t-[24px]"
+          className="z-10 md:h-full object-contain mx-auto rounded-lg"
         />
       </div>
-      <div className="mt-6 p-8">
+      <div className="mt-2 p-8">
         <Link href={event.link}>
           <h3 className="text-2xl font-mono text-slate-100 font-semibold">
             {event.name}
