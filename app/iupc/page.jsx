@@ -23,7 +23,7 @@ export default function DLSprintPage() {
     {
       event: "Pre-registration",
       location: "Online",
-      date: "Sep 29 - Oct 06",
+      date: "Sep 29 - Oct 06 (11:55 PM)",
     },
     {
       event: "Mock Contest",
@@ -37,7 +37,24 @@ export default function DLSprintPage() {
     },
   ];
 
-  const prizeMoney = [];
+  const prizeMoney = [
+    {
+      label: "1st Place",
+      prize: "TBD",
+    },
+    {
+      label: "2nd Place",
+      prize: "TBD",
+    },
+    {
+      label: "3rd Place",
+      prize: "TBD",
+    },
+    {
+      label: "BUET Rising Team",
+      prize: "TBD",
+    },
+  ];
 
   const faqData = [
     {
@@ -79,9 +96,29 @@ export default function DLSprintPage() {
       videoSrc: "https://www.youtube.com/embed/iuI0SKPT35Y?si=5GT4BcRRJPrHGGdK",
       thumbnail: "https://img.youtube.com/vi/iuI0SKPT35Y/hqdefault.jpg",
     },
+    {
+      videoSrc: "https://www.youtube.com/embed/5yFkAG6lOSg?si=-Y74Dm20iP4b3SfP",
+      thumbnail: "https://img.youtube.com/vi/5yFkAG6lOSg/hqdefault.jpg",
+    },
   ];
 
-  const sponsors = [];
+  const sponsors = [
+    {
+      name: "Therap",
+      logo: "/images/sponsors/therap.webp",
+      status: "Bronze-sponsor",
+    },
+    {
+      name: "Code Crafters",
+      logo: "/images/sponsors/code-crafters.png",
+      status: "Co-sponsor",
+    },
+    {
+      name: "Computer Society",
+      logo: "/images/sponsors/ieee-buet.png",
+      status: "Co-host",
+    },
+  ];
 
   return (
     <>
@@ -91,11 +128,11 @@ export default function DLSprintPage() {
           description={event.description}
           ctaPrimary={{
             label: "Register",
-            href: "#",
+            href: "https://forms.gle/V8LPmKcAt1K9TaP58",
           }}
           ctaSecondary={{
-            label: "Rules",
-            href: "#",
+            label: "Event",
+            href: "https://www.facebook.com/events/548556114360308/",
           }}
           event={event}
         />
@@ -122,7 +159,7 @@ export default function DLSprintPage() {
 
         <EventResources resources={resourcesData} />
 
-        <EventCTA />
+        <EventCTA href="https://forms.gle/V8LPmKcAt1K9TaP58" />
       </div>
     </>
   );

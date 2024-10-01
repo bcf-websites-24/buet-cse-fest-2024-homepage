@@ -119,7 +119,7 @@ export default function DLSprintPage() {
     },
     {
       name: "Computer Society",
-      logo: "/images/sponsors/ieee-buet.jpeg",
+      logo: "/images/sponsors/ieee-buet.png",
       status: "Co-host",
     },
   ];

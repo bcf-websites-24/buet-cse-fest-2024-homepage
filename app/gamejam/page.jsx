@@ -1,14 +1,7 @@
 import { EventBanner } from "@/components/event-banner";
 import { EventHero } from "@/components/event-hero";
 
-import {
-  events,
-  faqData,
-  prizeMoney,
-  resourcesData,
-  sponsors,
-  timeLineData,
-} from "@/lib/data";
+import { events } from "@/lib/data";
 import { Sponsors } from "../(home)/sponsors";
 import { EventDescription } from "@/components/event-description";
 import { EventTimeLine } from "@/components/event-timeline";
@@ -22,94 +15,84 @@ export default function DLSprintPage() {
 
   const timeLineData = [
     {
-      event: "Online Registration",
+      event: "Registration Deadline",
       location: "Online",
-      date: "Sep 24 - Oct 3 (11:59 PM)",
+      date: "TBD",
     },
     {
-      event: "Online Submission Deadline",
+      event: "Phase 1",
       location: "Online",
-      date: "Oct 9 (11:59 PM)",
+      date: "Oct 13 - 17",
     },
     {
-      event: "Screening Result Announcement",
-      location: "Online",
-      date: "Oct 11",
-    },
-    {
-      event: "Onsite Registration",
-      location: "Online",
-      date: "Oct 11 - Oct 16 (11:59 PM)",
-    },
-    {
-      event: "Onsite Round",
+      event: "Phase 2",
       location: "ECE Building, BUET",
-      date: "Oct 19 (02:30 PM)",
+      date: "Oct 26",
     },
   ];
 
   const prizeMoney = [
     {
       label: "1st Place",
-      prize: "BDT 10,000",
+      prize: "BDT 30,000",
     },
     {
       label: "2nd Place",
-      prize: "BDT 8,000",
+      prize: "BDT 20,000",
     },
     {
       label: "3rd Place",
-      prize: "BDT 5,000",
+      prize: "BDT 12,000",
     },
     {
       label: "BUET Rising Team",
-      prize: "BDT 5,000",
+      prize: "BDT 8,000",
     },
   ];
 
   const faqData = [
     {
-      ques: "What is BUET CSE Fest 2024 - Poster Presentation?",
-      ans: "BUET CSE Fest 2024 - Poster Presentation is an event where undergraduate students can showcase their research ideas, gain valuable feedback, and inspire future work. It is designed for both novice and advanced students in the field of computer science.",
+      ques: "What is BUET CSE FEST 2024 Game Jam?",
+      ans: "A hybrid event designed to foster creativity and innovation in game development.",
     },
     {
-      ques: "Who can participate in the Poster Presentation?",
-      ans: "Undergraduate students from any institution and department can participate. Teams can consist of one or more members, with no upper limit on team size.",
+      ques: "What is the format of the Game Jam?",
+      ans: "A two-phase competition: Online Qualifying Round followed by On-site Final Round.",
     },
     {
-      ques: "What are the key dates for the event?",
-      ans: "Important dates include:\n- Online Registration Deadline: 11:59 PM, 3rd October 2024\n- Online Submission Deadline: 11:59 PM, 9th October 2024\n- Screening Result Announcement: 11th October 2024\n- Final Round Registration Deadline: 11:59 PM, 16th October 2024\n- Final Round: 19th October 2024 at BUET Campus.",
+      ques: "When is the Online Qualifying Round?",
+      ans: "October 13-17, 2024",
     },
     {
-      ques: "What are the submission and participation fees?",
-      ans: "There is no fee for online submission. For the onsite final round, the registration fee for a team of 1-3 members is 500 BDT, with an additional fee of 250 BDT for each member beyond 3.",
+      ques: "When is the On-site Final Round?",
+      ans: "October 26, 2024",
     },
     {
-      ques: "What is the format for the submission?",
-      ans: "Participants must submit their poster in PDF format for the first round online. Finalists will then be invited to present onsite at BUET, with the organizers handling the printing for the final round.",
+      ques: "Where will the On-site Final Round be held?",
+      ans: "ECE Building, BUET, Palashi, Dhaka",
     },
     {
-      ques: "What are the prizes for the winners?",
-      ans: "Exciting prize money awaits the winners of the final round.",
+      ques: "What is the theme/prompt for the game development?",
+      ans: "It will be announced at the start of the Online Qualifying Round.",
     },
     {
-      ques: "How can I register for the event?",
-      ans: "To register, fill out the form at https://forms.gle/gSCshPaCCY77Ge8h9. No fees are required for online registration.",
+      ques: "What is the duration of the Online Qualifying Round?",
+      ans: "4 days",
     },
     {
-      ques: "What can I expect from the final round?",
-      ans: "The final round is not just about presenting results, but also sharing ideas and receiving feedback from experienced academicians. It's an excellent opportunity for learning and refining research concepts.",
+      ques: "Are there any prizes for the Game Jam?",
+      ans: "Yes, there will be an exciting prize pool for the winners.",
     },
   ];
 
   const resourcesData = [
     {
-      videoSrc: "https://www.youtube.com/embed/IIr22p0jWjQ?si=PLKnwVCLIItqcvPe",
-      thumbnail: "https://img.youtube.com/vi/IIr22p0jWjQ/hqdefault.jpg",
+      videoSrc: "https://www.youtube.com/embed/gqCAeFjB8Uo?si=RY-rlMuVjrFM2SM7",
+      thumbnail: "https://img.youtube.com/vi/gqCAeFjB8Uo/hqdefault.jpg",
     },
     {
-      videoSrc: "https://www.youtube.com/embed/dh0pJdgY6Lc?si=N39wAySX_z9546bL",
-      thumbnail: "https://img.youtube.com/vi/dh0pJdgY6Lc/hqdefault.jpg",
+      videoSrc: "https://www.youtube.com/embed/tYxZ_LOlFnU?si=3GiATfzN5csKdVu2",
+      thumbnail: "https://img.youtube.com/vi/tYxZ_LOlFnU/hqdefault.jpg",
     },
   ];
 
@@ -120,13 +103,13 @@ export default function DLSprintPage() {
       status: "Bronze-sponsor",
     },
     {
-      name: "Intelligent Machines",
-      logo: "/images/sponsors/iml.png",
+      name: "Code Crafters",
+      logo: "/images/sponsors/code-crafters.png",
       status: "Co-sponsor",
     },
     {
       name: "Computer Society",
-      logo: "/images/sponsors/ieee-buet.jpeg",
+      logo: "/images/sponsors/ieee-buet.png",
       status: "Co-host",
     },
   ];
@@ -139,38 +122,38 @@ export default function DLSprintPage() {
           description={event.description}
           ctaPrimary={{
             label: "Register",
-            href: "#",
+            href: "https://docs.google.com/forms/d/e/1FAIpQLScSliL-4cLbPriYBe_qPe8qN5r_5aSdD498rvTPRtPN7bvuAw/viewform",
           }}
           ctaSecondary={{
-            label: "Rules",
-            href: "#",
+            label: "Discord",
+            href: "https://discord.gg/wNgfj7hjeJ",
           }}
           event={event}
         />
 
         <EventBanner
           child1={<h3 className="font-semibold">{event.date}</h3>}
-          child2={<h3 className="font-semibold">3 Categories</h3>}
-          child3={<h3 className="font-semibold">100K Prize Money</h3>}
+          child2={<h3 className="font-semibold">2 phases</h3>}
+          child3={<h3 className="font-semibold">70K Prize Money</h3>}
         />
 
         <Sponsors sponsors={sponsors} />
 
         <EventDescription
           description={
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse cum corporis deserunt provident modi magni temporibus maxime minima deleniti sapiente! Et, facere! Suscipit quo perferendis hic ut repellat facilis ipsa ullam eius! Culpa temporibus voluptas ipsum ratione! Quisquam natus accusamus temporibus iure. Repellendus architecto, quo libero quis, assumenda molestias explicabo porro dolore excepturi magnam repellat, itaque sint perspiciatis! Obcaecati velit mollitia ipsa ea ducimus nemo eaque enim iusto facilis soluta officiis, vitae corporis laborum aut quisquam illum vel eveniet, eius dolore! Repellat ullam natus laborum quibusdam, ex corrupti corporis possimus ad? Eveniet rem pariatur asperiores quos autem vitae hic repellendus."
+            "BUET CSE FEST 2024 Game Jam is a hybrid game development competition that offers aspiring game developers a platform to showcase their creativity and win exciting prizes. The event features an online qualifying round followed by an on-site final round, where teams will compete to create games based on a given theme."
           }
         />
 
-        <EventTimeLine timeLineData={timeLineData["gamejam"]} />
+        <EventTimeLine timeLineData={timeLineData} />
 
-        <EventPrize prizeData={prizeMoney["gamejam"]} />
+        <EventPrize prizeData={prizeMoney} />
 
-        <EventFaq faqData={faqData["gamejam"]} />
+        <EventFaq faqData={faqData} />
 
-        <EventResources resources={resourcesData["gamejam"]} />
+        <EventResources resources={resourcesData} />
 
-        <EventCTA />
+        <EventCTA href="https://docs.google.com/forms/d/e/1FAIpQLScSliL-4cLbPriYBe_qPe8qN5r_5aSdD498rvTPRtPN7bvuAw/viewform" />
       </div>
     </>
   );
