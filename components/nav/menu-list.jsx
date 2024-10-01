@@ -57,17 +57,21 @@ export const MenuList = () => {
           <p>{menu.name}</p>
         </Link>
       ))}
-      <Link href="/sign-up" className="font-semibold">
+      <a
+        href="https://www.facebook.com/profile.php?id=61566249745875"
+        target="blank"
+        className="font-semibold"
+      >
         <AnimatedGradientText>
           <span
             className={cn(
               `inline animate-gradient bg-gradient-to-r from-[#59b5f8] via-[#3bbb96] to-[#59b5f8] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
             )}
           >
-            Facebook Event
+            Facebook Page
           </span>
         </AnimatedGradientText>
-      </Link>
+      </a>
     </div>
   );
 };
