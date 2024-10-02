@@ -9,8 +9,11 @@ import { EventPrize } from "@/components/event-prize";
 import { EventFaq } from "@/components/event-faq";
 import { EventResources } from "@/components/event-resources";
 import { EventCTA } from "@/components/event-cta";
+import { redirect } from "next/navigation";
 
 export default function DLSprintPage() {
+  return redirect("/");
+
   const event = events[0];
 
   const timeLineData = [
