@@ -133,7 +133,7 @@ export default function DLSprintPage() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative w-full">
         <EventHero
           title="Hackathon"
           description={event.description}
@@ -161,15 +161,10 @@ export default function DLSprintPage() {
             "BUET CSE Fest 2024 is a tech event organized by the Department of Computer Science and Engineering, BUET. The highlight of the event is a 24-hour hackathon, where participants will compete in teams to create innovative solutions. The hackathon will feature two segments: API and AI, and Microservice and Devops. There will also be workshops, mentorship, and exciting prizes."
           }
         />
-
         <EventTimeLine timeLineData={timeLineData} />
-
         <EventPrize prizeData={prizeMoney} />
-
         <EventFaq faqData={faqData} />
-
         <EventResources resources={resourcesData} />
-
         <EventCTA href="https://docs.google.com/forms/d/e/1FAIpQLSc6COSmwS1jaKA1ukOwN7_lmgcORy4LPHG-byZEXbntKYH_6Q/viewform" />
       </div>
     </>

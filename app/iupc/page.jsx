@@ -127,7 +127,7 @@ export default function DLSprintPage() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative w-full">
         <EventHero
           title="Inter University Programming Contest"
           description={event.description}

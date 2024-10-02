@@ -5,7 +5,7 @@ export const EventResources = ({ resources }) => {
     <div className="container">
       <h3 className="header mt-48">Resources & Workshops</h3>
 
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {resources?.map((resource, index) => (
           <HeroVideoDialog
             key={index}

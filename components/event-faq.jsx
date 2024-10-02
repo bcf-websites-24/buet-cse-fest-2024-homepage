@@ -15,7 +15,9 @@ export const EventFaq = ({ faqData }) => {
           {faqData.map((faq, index) => (
             <Accordion type="single" collapsible key={index}>
               <AccordionItem value="item-1">
-                <AccordionTrigger>{faq.ques}</AccordionTrigger>
+                <AccordionTrigger className="text-left">
+                  {faq.ques}
+                </AccordionTrigger>
                 <AccordionContent>{faq.ans}</AccordionContent>
               </AccordionItem>
             </Accordion>

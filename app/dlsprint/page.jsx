@@ -124,7 +124,7 @@ export default function DLSprintPage() {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative w-full">
         <EventHero
           title="Deep Learning Sprint"
           description={event.description}
