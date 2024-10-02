@@ -107,8 +107,13 @@ export default function DLSprintPage() {
 
   const sponsors = [
     {
+      name: "United Group",
+      logo: "/images/sponsors/united.png",
+      status: "Title Sponsor",
+    },
+    {
       name: "Therap",
-      logo: "/images/sponsors/therap.webp",
+      logo: "/images/sponsors/therap.png",
       status: "Bronze-sponsor",
     },
     {

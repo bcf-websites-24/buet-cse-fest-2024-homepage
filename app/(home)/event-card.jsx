@@ -10,17 +10,17 @@ export const EventCard = ({ event }) => {
   return (
     <div className="rounded-lg pb-4 max-w-sm h-full mx-auto text-center">
       <div className="p-6 relative h-auto">
-        <GridPattern
+        {/* <GridPattern
           className={cn(
             "[mask-image:radial-gradient(160px_circle_at_center,white,transparent)]",
             "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12"
           )}
-        />
+        /> */}
         <Image
           src={event.image}
           height={200}
           width={400}
-          className="z-10 md:h-full object-contain mx-auto rounded-lg"
+          className="z-50 md:h-full object-contain mx-auto rounded-lg"
         />
       </div>
       <div className="mt-2 p-8">

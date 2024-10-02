@@ -99,9 +99,19 @@ export default function DLSprintPage() {
 
   const sponsors = [
     {
+      name: "United Group",
+      logo: "/images/sponsors/united.png",
+      status: "Title Sponsor",
+    },
+    {
       name: "Therap",
-      logo: "/images/sponsors/therap.webp",
+      logo: "/images/sponsors/therap.png",
       status: "Bronze-sponsor",
+    },
+    {
+      name: "Pridesys IT Ltd.",
+      logo: "/images/sponsors/pridesys.svg",
+      status: "Co-Sponsor",
     },
     {
       name: "Computer Society",

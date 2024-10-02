@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import NextTopLoader from "nextjs-toploader";
 import { NavBar } from "@/components/nav/nav-bar";
 import { Footer } from "@/components/footer";
+import Head from "next/head";
 
 const mono = Sora({
   subsets: ["latin"],
@@ -20,6 +21,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body
         className={cn(
           mono.variable,
