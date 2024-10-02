@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fest-main
+  namespace: website
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fest-main
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: fest-main
+    spec:
+      containers:
+        - name: fest-main
+          image: <IMAGE>
+          ports:
+            - name: http
+              containerPort: 3000
+          resources:
+            requests:
+              cpu: 250m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fest-main
+  namespace: website
+spec:
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+  selector:
+    app: fest-main
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-fest-main
+  namespace: website
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-cluster-issuer
+spec:
+  tls:
+    - hosts:
+        - buetcsefest2024.com
+      secretName: letsencrypt-nginx-fest-main
+  rules:
+    - host: buetcsefest2024.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: fest-main
+                port:
+                  number: 80
+  ingressClassName: nginx
