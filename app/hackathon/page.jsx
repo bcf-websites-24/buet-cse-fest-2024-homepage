@@ -133,7 +133,7 @@ export default function DLSprintPage() {
       videoSrc: "https://www.youtube.com/embed/sYc8Pk00vj0?si=9COIRcZQS3Qr6-TU",
       thumbnail: "https://img.youtube.com/vi/sYc8Pk00vj0/hqdefault.jpg",
     },
-    {sYc8Pk00vj0
+    {
       videoSrc: "https://www.youtube.com/embed/X460EXGW5nA?si=eWtCgkYFk7M0RxMR",
       thumbnail: "https://img.youtube.com/vi/X460EXGW5nA/hqdefault.jpg",
     },
