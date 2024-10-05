@@ -123,17 +123,17 @@ export default function DLSprintPage() {
           title="Deep Learning Sprint"
           description={event.description}
           ctaPrimary={{
-            label: "Register",
-            href: "#",
+            label: "Event",
+            href: "https://www.facebook.com/events/526640960010230",
           }}
-          ctaSpecial={{
-            label: "Kaggle",
-            href: "#",
-          }}
-          ctaSecondary={{
-            label: "Rules",
-            href: "#",
-          }}
+          // ctaSpecial={{
+          //   label: "Kaggle",
+          //   href: "#",
+          // }}
+          // ctaSecondary={{
+          //   label: "Rules",
+          //   href: "#",
+          // }}
           event={event}
         />
 

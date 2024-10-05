@@ -35,7 +35,7 @@ export default function DLSprintPage() {
       date: "Oct 24 (08:00 AM)",
     },
     {
-      event: "Sprint",
+      event: "Onsite Round",
       location: "ECE Building, BUET",
       date: "Oct 24 (09:00 AM) - Oct 25 (09:00 AM)",
     },
