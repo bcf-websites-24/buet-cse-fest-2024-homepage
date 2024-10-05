@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const menus = [
   {
     name: "DL Sprint",
-    href: "/",
+    href: "/dlsprint",
     icon: <BrainIcon size={16} />,
   },
   {

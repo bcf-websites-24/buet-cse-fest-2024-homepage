@@ -12,7 +12,6 @@ import { EventCTA } from "@/components/event-cta";
 import { redirect } from "next/navigation";
 
 export default function DLSprintPage() {
-  return redirect("/");
 
   const event = events[0];
 
@@ -109,11 +108,6 @@ export default function DLSprintPage() {
       name: "Therap",
       logo: "/images/sponsors/therap.png",
       status: "Bronze-sponsor",
-    },
-    {
-      name: "Code Crafters",
-      logo: "/images/sponsors/code-crafters.png",
-      status: "Co-sponsor",
     },
     {
       name: "Computer Society",
