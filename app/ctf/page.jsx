@@ -16,7 +16,7 @@ export default function DLSprintPage() {
     {
       event: "Registration Deadline",
       location: "Online",
-      date: "TBD",
+      date: "Oct 11 (11:59 PM)",
     },
     {
       event: "Preliminary Round",
@@ -119,7 +119,7 @@ export default function DLSprintPage() {
     {
       name: "BUET Cyber Security Club",
       logo: "/images/sponsors/buet-cyber-security.jpeg",
-      status: "Co-sponsor",
+      status: "Co-host",
     },
     {
       name: "Computer Society",
@@ -143,7 +143,7 @@ export default function DLSprintPage() {
     <>
       <div className="relative w-full">
         <EventHero
-          title="Capture The Flag"
+          title="Inter University Capture The Flag"
           description={event.description}
           ctaPrimary={{
             label: "Register",
