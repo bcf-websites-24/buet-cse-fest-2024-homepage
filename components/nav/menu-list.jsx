@@ -14,7 +14,7 @@ import { cn } from "@/lib/utils";
 const menus = [
   {
     name: "DL Sprint",
-    href: "/",
+    href: "/dlsprint",
     icon: <BrainIcon size={16} />,
   },
   {
@@ -53,11 +53,6 @@ export const MenuList = () => {
           className="flex gap-x-2 items-center  px-3 py-1.5 rounded-full transition duration-200 relative"
           key={index}
         >
-          {menu.name === "DL Sprint" && (
-            <div className="absolute -bottom-2 left-0 right-0 text-center text-xs text-primary">
-              Coming Soon!
-            </div>
-          )}
           {menu.icon}
           <p>{menu.name}</p>
         </Link>

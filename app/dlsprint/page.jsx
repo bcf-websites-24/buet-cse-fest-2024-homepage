@@ -12,7 +12,6 @@ import { EventCTA } from "@/components/event-cta";
 import { redirect } from "next/navigation";
 
 export default function DLSprintPage() {
-  return redirect("/");
 
   const event = events[0];
 
@@ -111,11 +110,6 @@ export default function DLSprintPage() {
       status: "Bronze-sponsor",
     },
     {
-      name: "Code Crafters",
-      logo: "/images/sponsors/code-crafters.png",
-      status: "Co-sponsor",
-    },
-    {
       name: "Computer Society",
       logo: "/images/sponsors/ieee-buet.png",
       status: "Co-host",
@@ -129,17 +123,17 @@ export default function DLSprintPage() {
           title="Deep Learning Sprint"
           description={event.description}
           ctaPrimary={{
-            label: "Register",
-            href: "#",
+            label: "Event",
+            href: "https://www.facebook.com/events/526640960010230",
           }}
-          ctaSpecial={{
-            label: "Kaggle",
-            href: "#",
-          }}
-          ctaSecondary={{
-            label: "Rules",
-            href: "#",
-          }}
+          // ctaSpecial={{
+          //   label: "Kaggle",
+          //   href: "#",
+          // }}
+          // ctaSecondary={{
+          //   label: "Rules",
+          //   href: "#",
+          // }}
           event={event}
         />
 
