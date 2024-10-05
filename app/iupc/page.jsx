@@ -1,14 +1,7 @@
 import { EventBanner } from "@/components/event-banner";
 import { EventHero } from "@/components/event-hero";
 
-import {
-  events,
-  faqData,
-  prizeMoney,
-  resourcesData,
-  sponsors,
-  timeLineData,
-} from "@/lib/data";
+import { events } from "@/lib/data";
 import { Sponsors } from "../(home)/sponsors";
 import { EventDescription } from "@/components/event-description";
 import { EventTimeLine } from "@/components/event-timeline";
@@ -27,7 +20,7 @@ export default function DLSprintPage() {
     },
     {
       event: "Mock Contest",
-      location: "Online",
+      location: "ECE Building, BUET",
       date: "Oct 31 (03:00 PM - 05:00PM)",
     },
     {
@@ -39,20 +32,32 @@ export default function DLSprintPage() {
 
   const prizeMoney = [
     {
-      label: "1st Place",
-      prize: "TBD",
+      label: "Champion",
+      prize: "50,000",
     },
     {
-      label: "2nd Place",
-      prize: "TBD",
+      label: "1st Runner-up",
+      prize: "30,000",
     },
     {
-      label: "3rd Place",
-      prize: "TBD",
+      label: "2nd Runner-up",
+      prize: "20,000",
     },
     {
-      label: "BUET Rising Team",
-      prize: "TBD",
+      label: "4th Place",
+      prize: "15,000",
+    },
+    {
+      label: "5th Place",
+      prize: "10,000",
+    },
+    {
+      label: "6-8th Place",
+      prize: "8,000",
+    },
+    {
+      label: "9-10th Place",
+      prize: "6,000",
     },
   ];
 
@@ -93,8 +98,8 @@ export default function DLSprintPage() {
 
   const resourcesData = [
     {
-      videoSrc: "https://www.youtube.com/embed/iuI0SKPT35Y?si=5GT4BcRRJPrHGGdK",
-      thumbnail: "https://img.youtube.com/vi/iuI0SKPT35Y/hqdefault.jpg",
+      videoSrc: "https://www.youtube.com/embed/xAeiXy8-9Y8?si=lTf6673h58qv0Peg",
+      thumbnail: "https://img.youtube.com/vi/xAeiXy8-9Y8/hqdefault.jpg",
     },
     {
       videoSrc: "https://www.youtube.com/embed/5yFkAG6lOSg?si=-Y74Dm20iP4b3SfP",
@@ -133,19 +138,19 @@ export default function DLSprintPage() {
           description={event.description}
           ctaPrimary={{
             label: "Register",
-            href: "https://forms.gle/V8LPmKcAt1K9TaP58",
+            href: "https://docs.google.com/forms/d/e/1FAIpQLSfNequzljmicXGDd-YWuUTgRdAE0Qi1UAruGJ2CVMUNF6TB3Q/viewform",
           }}
           ctaSecondary={{
             label: "Event",
-            href: "https://www.facebook.com/events/548556114360308/",
+            href: "https://www.facebook.com/events/847729750896634/",
           }}
           event={event}
         />
 
         <EventBanner
           child1={<h3 className="font-semibold">{event.date}</h3>}
-          child2={<h3 className="font-semibold">3 Categories</h3>}
-          child3={<h3 className="font-semibold">100K Prize Money</h3>}
+          child2={<h3 className="font-semibold">Mock Contest Available</h3>}
+          child3={<h3 className="font-semibold">160K+ Prize Money</h3>}
         />
 
         <Sponsors sponsors={sponsors} />
@@ -164,7 +169,7 @@ export default function DLSprintPage() {
 
         <EventResources resources={resourcesData} />
 
-        <EventCTA href="https://forms.gle/V8LPmKcAt1K9TaP58" />
+        <EventCTA href="https://docs.google.com/forms/d/e/1FAIpQLSfNequzljmicXGDd-YWuUTgRdAE0Qi1UAruGJ2CVMUNF6TB3Q/viewform" />
       </div>
     </>
   );
