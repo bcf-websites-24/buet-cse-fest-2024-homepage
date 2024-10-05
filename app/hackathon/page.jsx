@@ -22,7 +22,7 @@ export default function DLSprintPage() {
     {
       event: "Workshop",
       location: "Online",
-      date: "Oct 7, 8",
+      date: "Oct 14",
     },
     {
       event: "Preliminary Round",
@@ -54,19 +54,27 @@ export default function DLSprintPage() {
   const prizeMoney = [
     {
       label: "1st Place",
-      prize: "TBD",
+      prize: "35,000",
     },
     {
       label: "2nd Place",
-      prize: "TBD",
+      prize: "25,000",
     },
     {
       label: "3rd Place",
-      prize: "TBD",
+      prize: "15,000",
     },
     {
       label: "BUET Rising Team",
-      prize: "TBD",
+      prize: "8,000",
+    },
+    {
+      label: "Best Documentation",
+      prize: "8,000",
+    },
+    {
+      label: "Best UI/UX",
+      prize: "8,000",
     },
   ];
 
@@ -122,12 +130,12 @@ export default function DLSprintPage() {
 
   const resourcesData = [
     {
-      videoSrc: "https://www.youtube.com/embed/2dwViBve148?si=No33OPxtEmXb0P1Q",
-      thumbnail: "https://img.youtube.com/vi/2dwViBve148/hqdefault.jpg",
+      videoSrc: "https://www.youtube.com/embed/sYc8Pk00vj0?si=9COIRcZQS3Qr6-TU",
+      thumbnail: "https://img.youtube.com/vi/sYc8Pk00vj0/hqdefault.jpg",
     },
-    {
-      videoSrc: "https://www.youtube.com/embed/3pMaR4Vmdo0?si=s58aHFbe0UbDMLUv",
-      thumbnail: "https://img.youtube.com/vi/3pMaR4Vmdo0/hqdefault.jpg",
+    {sYc8Pk00vj0
+      videoSrc: "https://www.youtube.com/embed/X460EXGW5nA?si=eWtCgkYFk7M0RxMR",
+      thumbnail: "https://img.youtube.com/vi/X460EXGW5nA/hqdefault.jpg",
     },
   ];
 
@@ -150,8 +158,8 @@ export default function DLSprintPage() {
 
         <EventBanner
           child1={<h3 className="font-semibold">{event.date}</h3>}
-          child2={<h3 className="font-semibold">3 Segments</h3>}
-          child3={<h3 className="font-semibold">Exciting Prize Money</h3>}
+          child2={<h3 className="font-semibold">2 Segments</h3>}
+          child3={<h3 className="font-semibold">170K+ Prize Money</h3>}
         />
 
         <Sponsors sponsors={sponsors} />

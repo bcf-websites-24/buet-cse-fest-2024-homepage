@@ -32,15 +32,15 @@ export default function DLSprintPage() {
 
   const prizeMoney = [
     {
-      label: "Champion",
+      label: "1st Place",
       prize: "50,000",
     },
     {
-      label: "1st Runner-up",
+      label: "2nd Place",
       prize: "30,000",
     },
     {
-      label: "2nd Runner-up",
+      label: "3rd Place",
       prize: "20,000",
     },
     {
