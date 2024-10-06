@@ -24,7 +24,7 @@ export const CustomButton = ({
       <>
         <div
           className={cn(
-            "cursor-pointer rounded-[8px] px-6 py-3 bg-gradient-to-br from-primary to-accent font-semibold z-50",
+            "cursor-pointer rounded-[8px] px-6 py-3 bg-gradient-to-br from-primary to-accent font-semibold z-10",
             className
           )}
           onClick={handleClick}

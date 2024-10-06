@@ -26,9 +26,12 @@ export const MobileNav = () => {
         onClick={() => setIsOpen(false)}
       >
         <SheetHeader>
-          <SheetTitle className={"mb-8"}>
+          {/* <SheetTitle className={"mb-4"}>
             <NavLogo />
-          </SheetTitle>
+          </SheetTitle> */}
+          <div className="center mb-4">
+            <NavLogo className={"ml-0"} />
+          </div>
           <MenuList />
           <SheetDescription></SheetDescription>
         </SheetHeader>

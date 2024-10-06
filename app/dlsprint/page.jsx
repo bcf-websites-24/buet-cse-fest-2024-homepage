@@ -9,81 +9,71 @@ import { EventPrize } from "@/components/event-prize";
 import { EventFaq } from "@/components/event-faq";
 import { EventResources } from "@/components/event-resources";
 import { EventCTA } from "@/components/event-cta";
-import { redirect } from "next/navigation";
 
 export default function DLSprintPage() {
-
   const event = events[0];
 
   const timeLineData = [
     {
-      event: "Registration Deadline",
+      event: "Registration",
       location: "Online",
-      date: "TBD",
+      date: "Oct 7 - Oct 24",
     },
     {
-      event: "Phase 1",
+      event: "Phase 1 Submission Deadline",
       location: "Online",
-      date: "Oct 13 - 17",
+      date: "Oct 31",
     },
     {
       event: "Phase 2",
       location: "ECE Building, BUET",
-      date: "Oct 26",
+      date: "TBD",
     },
   ];
 
   const prizeMoney = [
     {
       label: "1st Place",
-      prize: "BDT 30,000",
+      prize: "TBD",
     },
     {
       label: "2nd Place",
-      prize: "BDT 20,000",
+      prize: "TBD",
     },
     {
       label: "3rd Place",
-      prize: "BDT 12,000",
+      prize: "TBD",
     },
     {
       label: "BUET Rising Team",
-      prize: "BDT 8,000",
+      prize: "TBD",
     },
   ];
 
   const faqData = [
     {
-      ques: "What is BUET CSE FEST 2024 Game Jam?",
-      ans: "A hybrid event designed to foster creativity and innovation in game development.",
+      ques: "What is the primary goal of this competition?",
+      ans: "To develop AI models capable of solving Bengali Math Olympiad problems.",
     },
     {
-      ques: "What is the format of the Game Jam?",
-      ans: "A two-phase competition: Online Qualifying Round followed by On-site Final Round.",
+      ques: "Who can participate in the competition?",
+      ans: "Teams of up to 5 members, including at most 1 professional or expert and the rest must be undergraduate students.",
     },
     {
-      ques: "When is the Online Qualifying Round?",
-      ans: "October 13-17, 2024",
+      ques: "When is the registration deadline?",
+      ans: "October 24, 2024.",
     },
     {
-      ques: "When is the On-site Final Round?",
-      ans: "October 26, 2024",
+      ques: "What is the format of the competition?",
+      ans: "The competition consists of two phases: an online phase from October 7 to 31, 2024, and an optional offline phase on November 6, 2024.",
     },
     {
-      ques: "Where will the On-site Final Round be held?",
-      ans: "ECE Building, BUET, Palashi, Dhaka",
+      ques: "What kind of problems will the AI models need to solve?",
+      ans: "The AI models will need to solve complex mathematical problems presented in Bengali.",
     },
     {
-      ques: "What is the theme/prompt for the game development?",
-      ans: "It will be announced at the start of the Online Qualifying Round.",
-    },
-    {
-      ques: "What is the duration of the Online Qualifying Round?",
-      ans: "4 days",
-    },
-    {
-      ques: "Are there any prizes for the Game Jam?",
-      ans: "Yes, there will be an exciting prize pool for the winners.",
+      ques: "What are the potential benefits of participating in this competition?",
+      ans: "Participants will contribute to advancing AI's problem-solving abilities and potentially create valuable educational tools for Bangladeshi students.",
     },
   ];
 
@@ -140,14 +130,14 @@ export default function DLSprintPage() {
         <EventBanner
           child1={<h3 className="font-semibold">{event.date}</h3>}
           child2={<h3 className="font-semibold">2 phases</h3>}
-          child3={<h3 className="font-semibold">100K Prize Money</h3>}
+          child3={<h3 className="font-semibold">Exciting Prize Money</h3>}
         />
 
         <Sponsors sponsors={sponsors} />
 
         <EventDescription
           description={
-            "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse cum corporis deserunt provident modi magni temporibus maxime minima deleniti sapiente! Et, facere! Suscipit quo perferendis hic ut repellat facilis ipsa ullam eius! Culpa temporibus voluptas ipsum ratione! Quisquam natus accusamus temporibus iure. Repellendus architecto, quo libero quis, assumenda molestias explicabo porro dolore excepturi magnam repellat, itaque sint perspiciatis! Obcaecati velit mollitia ipsa ea ducimus nemo eaque enim iusto facilis soluta officiis, vitae corporis laborum aut quisquam illum vel eveniet, eius dolore! Repellat ullam natus laborum quibusdam, ex corrupti corporis possimus ad? Eveniet rem pariatur asperiores quos autem vitae hic repellendus."
+            "This competition is a pioneering effort to develop AI models capable of solving complex mathematical problems in Bengali, a low-resource language. By participating, you will contribute to advancing AI's problem-solving abilities and potentially create valuable educational tools for Bangladeshi students. The competition provides a unique opportunity to showcase your skills and be part of a groundbreaking development in the field of AI."
           }
         />
 
@@ -157,9 +147,9 @@ export default function DLSprintPage() {
 
         <EventFaq faqData={faqData} />
 
-        <EventResources resources={resourcesData} />
+        {/* <EventResources resources={resourcesData} /> */}
 
-        <EventCTA />
+        {/* <EventCTA /> */}
       </div>
     </>
   );
