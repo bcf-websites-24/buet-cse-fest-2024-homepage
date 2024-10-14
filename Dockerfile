@@ -1,4 +1,4 @@
-FROM public.ecr.aws/avanti/oven/bun:1.0.29-alpine AS BASE
+FROM public.ecr.aws/avanti/oven/bun:slim AS BASE
 
 FROM base AS builder
 WORKDIR /app
