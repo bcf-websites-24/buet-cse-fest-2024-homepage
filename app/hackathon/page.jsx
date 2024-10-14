@@ -27,7 +27,6 @@ export default function DLSprintPage() {
     {
       event: "Preliminary Round",
       location: "Online",
-      
       date: "Oct 16",
     },
     {
