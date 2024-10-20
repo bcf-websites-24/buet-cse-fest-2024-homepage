@@ -4,7 +4,7 @@
 
 - [ ] main pages links
 - [x] poster presentation
-- [ ] dl sprint
+- [x] dl sprint
 - [ ] hackathon
 - [ ] gamejam
 - [ ] ctf
