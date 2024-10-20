@@ -2,7 +2,7 @@
 
 ## TODOs
 
-- [ ] main pages links
+- [x] main pages links
 - [x] poster presentation
 - [x] dl sprint
 - [ ] hackathon
