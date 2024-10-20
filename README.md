@@ -1,4 +1,4 @@
-# BUET CSE Fest 2024
+# BUET CSE Fest 2024 Main Website
 
 ## TODOs
 
