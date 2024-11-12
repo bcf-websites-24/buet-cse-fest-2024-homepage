@@ -1,10 +1,10 @@
-# BUET CSE Fest 2024
+# BUET CSE Fest 2024 Website
 
 ## TODOs
 
-- [ ] main pages links
+- [x] main pages links
 - [x] poster presentation
-- [ ] dl sprint
+- [x] dl sprint
 - [ ] hackathon
 - [ ] gamejam
 - [ ] ctf
