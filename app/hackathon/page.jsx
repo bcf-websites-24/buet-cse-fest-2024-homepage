@@ -118,7 +118,7 @@ export default function DLSprintPage() {
     },
     {
       name: "Pridesys IT Ltd.",
-      logo: "/images/sponsors/pridesys.svg",
+      logo: "/images/sponsors/pridesys.png",
       status: "Co-Sponsor",
     },
     {

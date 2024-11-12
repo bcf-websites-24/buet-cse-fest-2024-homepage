@@ -118,7 +118,7 @@ export default function DLSprintPage() {
     },
     {
       name: "BUET Cyber Security Club",
-      logo: "/images/sponsors/buet-cyber-security.jpeg",
+      logo: "/images/sponsors/buet-cyber-security.png",
       status: "Co-host",
     },
     {
